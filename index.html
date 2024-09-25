@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Primeiro Mês</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem vinda á minha surpresa!</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('welcome')">Início</a></li>
+                <li><a href="#" onclick="showSection('timeline')">Linha do Tempo</a></li>
+                <li><a href="#" onclick="showSection('gallery')">Galeria de Fotos</a></li>
+                <li><a href="#" onclick="showSection('messages')">Mural de Recados</a></li>
+                <li><a href="#" onclick="showSection('counter')">Contador de Dias</a></li>
+                <li><a href="#" onclick="showSection('nextDate')">Contagem Regressiva</a></li>
+                <li><a href="#" onclick="showSection('lyrics')">Letra da Música</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <!-- Seção de Boas-Vindas -->
+        <div id="welcome" class="section">
+            <h1>Bem-vinda, amor!</h1>
+            <p>Hoje faz um mês que começamos a conversar e, desde então, minha vida ficou muito mais bonita. Este é um espaço especial que eu criei só para você, para lembrar os momentos que vivemos e compartilhar o que está por vir.</p>
+            <a href="#" class="button" onclick="startJourney()">Começar a Jornada</a>
+        </div>
+
+        <div id="amor" class="section mensagem-amor" style="display: none;">
+            <h2>Meu Amor por Você</h2>
+            <p>
+                Meu amor,</p>
+
+            <p>Hoje, celebramos um mês incrível desde que começamos a conversar. Embora tenha sido apenas um mês, sinto como se já tivéssemos vivido tantas coisas juntos. Cada mensagem, cada risada, e cada troca de palavras me fez perceber o quanto você é especial para mim.</p>
+
+            <p>Desde o primeiro instante em que começamos a nos falar, algo dentro de mim mudou. Sua voz, suas palavras, o seu jeito de ser, tudo me encantou. Você traz uma luz à minha vida que eu nunca soube que estava faltando. Cada dia que passa, meu carinho por você só cresce.</p>
+
+            <p>Lembro-me de nossas conversas, como elas fluem naturalmente, como se sempre tivéssemos nos conhecido. É impressionante como você me faz sentir à vontade para ser quem sou, e isso é algo raro e precioso. Você me inspira a ser uma pessoa melhor, e isso é apenas uma das muitas razões pelas quais eu te admiro.</p>
+
+            <p>Neste primeiro mês, aprendi mais sobre você e, a cada nova descoberta, meu coração se enche de alegria. Sua risada é música para os meus ouvidos, e o seu sorriso é capaz de iluminar até os dias mais sombrios. Você é uma mistura perfeita de força e gentileza, e isso me fascina.</p>
+
+            <p>Quero que saiba que você é muito importante para mim. Cada momento que passamos conversando me faz querer mais, me faz sonhar em viver novas experiências ao seu lado. Mal posso esperar para compartilhar momentos, risadas e até mesmo desafios com você. Estou animado para ver onde essa jornada nos levará.</p>
+
+            <p>Agradeço por ser você, por abrir seu coração e compartilhar sua vida comigo. Acredito que isso é apenas o começo de algo incrível. Eu te quero muito mais do que palavras podem expressar. Este mês foi especial, e estou ansioso para todos os meses e anos que virão, se você também estiver.</p>
+
+            <p>Eu te amo, e isso é apenas o começo da nossa história.
+            </p>
+        </div>
+
+        <div class="navegation">
+            <button id="prevButton" class="nav-button anterior" onclick="prevSection()" style="display: none;">&#8592; Anterior</button>
+            <button id="nextButton" class="nav-button proximo" onclick="nextSection()" style="display: none;">Próximo &#8594;</button>
+        </div>
+
+        <!-- Seção Letra da Música -->
+        <section id="lyrics" class="section" style="display: none;">
+            <h2>Letra da Música</h2>
+            <p><strong>Frio na Barriga</strong></p>
+            <p>Salve, salve, eae Vmzin? Daora minha joia?
+                Ó, você é o Plutão e eu sou o putão romântico
+                Então essa aqui vai ser a junção, tá?
+                Vai ser o Plutão romântico</p>
+            
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+                
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+            
+            <p> Linda, eu não vou mentir, também magoei alguns corações
+                Mas eu sei que aprendi muito com essas decepções
+                E antes de você meu coração tava zoado
+                Quebrado, despedaçado, então cuidado, yeah</p>
+            
+            <p> Mas agora é você que tá no foco
+                Vou te chamar de minha, comentar todas as suas fotos
+                Vou te levar café na cama, toda semana (yeah)
+                De dia te chamar de linda e a noite de piranha, yeah, yeah</p>
+            
+            <p> Deixa quem fala dizer
+                Eles não querem nos ver sorrindo, somando nem triplicando, cachê
+                Mas vão ter que ver, eles querem nossa atenção, mas não vão ter
+                Então valoriza eu que eu valorizo você, yeah</p>
+            
+            <p> Promete pra mim que eu não vou me arrepender, não
+                No meu pulso Rollie, no seu é Audemars Piguet
+                E a cada noite nossa, linda, eu vou dobrar o cachê
+                Então valoriza eu que eu valorizo você, yeah</p>
+            
+            <p> Promete pra mim que eu não vou me arrepender, não
+                No meu pulso Rollie, no seu é Audemars Piguet
+                E a cada noite nossa, linda, eu vou dobrar o cachê</p>
+            
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+            
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+            
+            <p> Ei, Krawk
+                Eu nem tinha dinheiro para um fone
+                Eu tive que focar no corre
+                E ela me deu love, antes disso tudo virar</p>
+            
+            <p> Me fez ser tão forte quando eu pensava em parar
+                E hoje tem money, money rain
+                Pequeno igual Plutão
+                Fiz uma bomba e coloquei o mundo na palma da mão</p>
+            
+            <p> Cantei igual ninguém, eu fiz de coração
+                E hoje um rockstar, Post Malone em outra dimensão
+                Traz essa baby para mim vamo viajar pra marte em outra dimensão
+                Mergulhar no chá mate, tipo Vmzin em um feat com o Krawk</p>
+            
+            <p> Mano, quem diria que eu estaria no auge (embala e empacota)
+                É até difícil de botar fé (mais um hit pra soltar)
+                Tá ligado mano? (Embala e empacota)</p>
+                              
+            <p> Mas pô tamo junto de mais (mais um hit pra soltar)
+                Cê é louco mano (embala e empacota, mais um hit pra soltar)
+                Embala e empacota, mais um hit pra soltar</p>
+            
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+            
+            <p> Alguém me explica esse frio na barriga
+                Que eu sinto toda vez que eu te vejo, linda?
+                Ontem cê tava gata e hoje mais ainda
+                Com essa cara de quem vai mudar minha vida</p>
+
+        </section>
+
+        <!-- Seção Linha do Tempo -->
+        <section id="timeline" class="timeline section" style="display: none;">
+            <h2>Linha do Tempo</h2>
+            <div class="timeline-item">
+                <h3>Dia 1 - O Início</h3>
+                <p>Foi o dia em que nos conhecemos e a nossa primeira conversa. Desde então, tudo mudou.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dia 7 - A Primeira Semana Juntos</h3>
+                <p>Uma semana depois, lembro dos nossos primeiros lovezinhos por conversa. A partir daí, as coisas começaram a ficar ainda mais especiais.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dia 11 - Nosso Primeiro Encontro</h3>
+                <p>Nosso primeiro encontro foi incrível. Ali eu já sabia que ia rolar algo muito a mais com você.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dia 19 - Primeira Vez Na Sua Casa</h3>
+                <p>A primeira vez que fui na sua casa. Foi incrível como sempre e fui muito bem recebido por você e sua mãe. Ali me senti mais amado do que nunca.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dia 26 - Segunda Vez Na Sua Casa</h3>
+                <p>E de novo na sua casa. Ali você me mostrou que devo minha vida a você, conheci mais sobre sua família e me senti da família também.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dia 31 - Um Mês Com Você</h3>
+                <p>E hoje completamos um mês juntos de muitos. Nunca pensei que amaria tanto alguém como você, hoje no nosso primeiro mês eu só queria falar o quanto te amo e o quanto vamos ser mais felizes daqui para frente.</p>
+            </div>
+        </section>
+
+        <!-- Seção Galeria de Fotos -->
+        <section id="gallery" class="gallery section" style="display: none;">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery-row">
+                <img src="imagem1.jpg" alt="Momento Especial 1">
+                <img src="imagem2.jpg" alt="Momento Especial 2">
+                <img src="imagem3.jpg" alt="Momento Especial 3">
+                <img src="imagem4.jpg" alt="Momento Especial 4">
+                <img src="imagem5.jpg" alt="Momento Especial 5">
+                <img src="imagem6.jpg" alt="Momento Especial 6">
+                <img src="imagem7.jpg" alt="Momento Especial 7">
+                <img src="imagem8.jpg" alt="Momento Especial 8">
+                <img src="imagem9.jpg" alt="Momento Especial 9">
+            </div>
+        </section>
+
+        <!-- Seção Mural de Recados -->
+        <section id="messages" class="messages section" style="display: none;">
+            <h2>Mural de Recados</h2>
+            <p>Amor, você é a razão de muitos dos meus sorrisos.</p>
+            <p>Cada dia ao seu lado é especial.</p>
+            <p>Mal posso esperar pelo que vem pela frente!</p>
+            <p>Cada conversa com você é uma nova página da nossa história.</p>
+            <p>Um mês de risadas, sonhos e um coração que bate mais forte por você.</p>
+            <p>Se eu soubesse que um simples 'oi' mudaria minha vida, eu teria te cumprimentado muito antes.</p>
+            <p>Você é a melhor parte do meu dia, e eu mal posso esperar para criar mais memórias ao seu lado.</p>
+            <p>Neste primeiro mês, descobri que meu lugar favorito é ao seu lado.</p>
+            <p>Seu sorriso ilumina meu mundo e me faz acreditar em coisas lindas.</p>
+            <p>A cada mensagem sua, meu coração se enche de alegria e esperança.</p>
+            <p>O que eu sinto por você é como um sonho que nunca quero acordar.</p>
+            <p>Um mês ao seu lado é só o começo de uma linda jornada.</p>
+            <p>Você é a razão do meu sorriso e a estrela que ilumina meu céu.</p>
+            <p>Amar você é como respirar: é essencial e natural.</p>
+            <p>Nosso amor é como um belo sonho que nunca quero acordar.</p>
+            <p>Você não é apenas minha namorada; você é minha melhor amiga e meu maior apoio.</p>
+            <p>A cada dia que passa, meu amor por você só aumenta.</p>
+            <p>Você é a melodia mais doce da minha vida.</p>
+            <p>Quando estou com você, o mundo inteiro desaparece.</p>
+            <p>Seu sorriso é meu lugar feliz.</p>
+            <p>O que sinto por você é mais do que amor; é uma conexão eterna.</p>
+            <p>Você é o meu sonho realizado e minha inspiração diária.</p>
+            <p>Em um mundo cheio de mudanças, você é a minha constante.</p>
+            <p>Cada momento ao seu lado é um tesouro que guardo no coração.</p>
+            <p>Você faz meu coração dançar com alegria.</p>
+            <p>Amar você é a melhor aventura que eu poderia ter.</p>
+            <p>Você é a razão pela qual acredito que o amor verdadeiro existe.</p>
+            <p>Quando olho nos seus olhos, vejo o meu lar.</p>
+            <p>Você é a resposta para todas as minhas orações.</p>
+            <p>Te amar é uma jornada que quero percorrer para sempre.</p>
+            <p>Seus abraços são o lugar mais seguro do mundo.</p>
+            <p>Meu amor por você é infinito, assim como o universo.</p>
+
+            <!-- <div class="message-board section"></div>
+                <h2>Deixe uma Mensagem</h2>
+                <div id="messageBoard"></div>
+                <textarea id="messageInput" placeholder="Escreva algo especial..."></textarea>
+                <button class="button" onclick="addMessages()">Postar Mensagem</button>
+            </div>  -->
+            
+        </section>
+
+        <!-- Seção Contador de Dias -->
+        <section id="counter" class="counter section" style="display: none;">
+            <h2>Contador de Dias</h2>
+            <p>Desde o nosso início, se passaram <span id="daysCounter"></span> dias!</p>
+        </section>
+
+        <!-- Seção Contagem Regressiva -->
+        <section id="nextDate" class="nextDate section" style="display: none;">
+            <h2>Contagem Regressiva</h2>
+            <p>Dias passados desde 27 de agosto de 2024: <span id="daysCounterr"></span></p>
+            <p>Faltam <span id="countdown"></span> dias para o próximo dia 27!</p>
+            <a href="#" class="button" onclick="showSection('amor')">Ver Mensagem de Amor</a>
+        </section>
+
+        <section id="notes" class="notes section" style="display: none;">
+            <h2>Notas para Você</h2>
+            <div id="noteList"></div>
+            <input type="text" id="noteInput" placeholder="Escreva sua nota aqui">
+            <button onclick="addNote()">Adicionar Nota</button>
+            
+        </section>
+        
+
+    </div>
+    
+
+    <audio id="backgroundMusic" loop>
+        <source src="musica.mp3">
+        Seu navegador não suporta o áudio.
+    </audio>
+    <button class="music-button" onclick="toggleMusic()">Tocar/Pausar Música</button>
+
+    <script>
+
+
+        function addMessage(){
+            const messageInput = document.getElementById('messageInput');
+            const messageBoard = document.getElementById('messagesBoard');
+
+            if (messageInput.value.trim() === ""){
+                alert("Por favor, digite uma mensagem.")
+                return;
+            }
+
+            var newMessage = document.createElement("p");
+            newMessage.textContent = messageInput.value;
+            newMessage.classList.add('message-style');
+
+            messageBoard.appendChild(newMessage);
+
+            messageInput.value = "";
+            
+
+        }
+        
+        let currentSectionIndex = 0;
+        const sections = document.querySelectorAll('.section');
+        const sectionIds = ['welcome', 'timeline', 'gallery', 'messages', 'counter', 'nextDate', 'lyrics', 'notes'];
+
+        function showSection(id) {
+            sections.forEach(section => {
+                if (section.id === id){
+                    section.classList.add('show');
+                    section.style.display = 'block';
+                } else {
+                    section.classList.remove('show');
+                    section.style.display = 'none';
+                }
+            });
+                
+
+            currentSectionIndex = sectionIds.indexOf(id);
+            document.getElementById('prevButton').style.display = currentSectionIndex > 0 ? 'block' : 'none';
+            document.getElementById('nextButton').style.display = currentSectionIndex < sections.length - 1 ? 'block' : 'none';
+
+            localStorage.setItem('currentSection', id);
+        }
+
+        window.onload = function () {
+            const savedSection = localStorage.getItem('currentSection') || sectionIds[0];
+            showSection('welcome');
+            showSection(savedSection);
+            updateDaysCounter();
+            countdownToNextDate();
+
+            function addMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const messageBoard = document.getElementById('messageBoard');
+
+            if (messageInput.value.trim() !== "") {
+            const newMessage = document.createElement('div');
+            newMessage.textContent = messageInput.value;
+            messageBoard.appendChild(newMessage);
+            messageInput.value = "";
+    }
+}
+
+            // Código do contador de dias...
+            function calculateDays(starDate) {
+                const todays = new Date();
+                const timeDiffs = todays - new Date(starDate);
+                const daysDiffs = Math.floor(timeDiffs / (1000 * 60 * 60 * 24));
+                return daysDiffs;
+            }
+
+            function updateDaysCounter(){
+                const startDate = '2024-08-27';
+                const daysPassed = calculateDays(startDate);
+                document.getElementById('daysCounter').innerText = daysPassed;
+            }
+            
+
+            // Código da contagem regressiva...
+            function countdownToNextDate(){
+                const today = new Date();
+                const nextDate = new Date(today.getFullYear(), today.getMonth(), 27);
+
+                if (today.getDate() > 27){
+                    nextDate.setMonth(today.getMonth() + 1);
+                }
+
+                const timeDiff = nextDate - today;
+                const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+                document.getElementById('countdown').innerText = daysLeft;
+            }
+            
+
+            // Código do formulário...
+            document.getElementById('form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const message = document.getElementById('messageInput').value;
+                const messageDiv = document.createElement('div');
+                messageDiv.textContent = message;
+                document.getElementById('submittedMessages').appendChild(messageDiv);
+                document.getElementById('messageInput').value = ''; // Limpa o campo
+            });
+        }
+
+        function nextSection() {
+            if (currentSectionIndex < sections.length - 1) {
+                showSection(sectionIds[currentSectionIndex + 1]);
+            }
+        }
+
+        function prevSection() {
+            if (currentSectionIndex > 0) {
+                showSection(sectionIds[currentSectionIndex - 1]);
+            }
+        }
+
+        function toggleMusic() {
+            const music = document.getElementById('backgroundMusic');
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+
+        function startJourney() {
+            const messageDiv = document.createElement('div');
+            messageDiv.innerHTML = `
+            <h2>Iniciando Nossa Jornada...</h2>
+            <p>Amor, a cada dia ao seu lado, descubro novos motivos para te amar. Hoje, celebramos o primeiro mês de uma linda história que só está começando. Estou ansioso para criar mais memórias incríveis com você.</p>
+            <p>Vamos juntos construir um futuro repleto de amor, risadas e momentos especiais. Você é a luz da minha vida!</p>
+            <p>Te amo cada dia mais!</p>`;
+            document.getElementById('container').appendChild(messageDiv);
+            messageDiv.style.display = 'block';
+
+            document.getElementById('prevButton').style.display = 'none';
+            document.getElementById('nextButton').style.display = 'none';
+
+        const startButton = document.createElement('a');
+            startButton.href = "#";
+            startButton.className = "button animate";
+            startButton.onclick = () => {
+                messageDiv.classList.add('fade-out');
+                setTimeout(() => {
+                    messageDiv.remove();
+                    showNextMessage();
+                }, 500);
+            };
+            startButton.innerText = "Começar a Jornada";
+
+            document.getElementById('container').appendChild(startButton);
+            
+            
+            setTimeout(() => {
+                startButton.classList.add('fade-out')
+                setTimeout(() => {
+                    startButton.remove();
+                }, 500);
+            }, 1000);
+
+            setTimeout(() => {
+                messageDiv.classList.add('fade-out');
+                setTimeout(() => {
+                    messageDiv.remove();
+                    showNextMessage();
+                }, 500);
+            }, 15000);
+
+        function showNextMessage(){
+            const nextMessageDiv = document.createElement('div');
+            nextMessageDiv.innerHTML = `
+            <h2>Agora, vamos seguir em frente Amor!</h2>
+            <p>Não esqueça de clicar no botão "Próximo" para continuar a nossa jornada juntos.</p>`
+
+            document.getElementById('container').appendChild(nextMessageDiv);
+            nextMessageDiv.style.display = 'block';
+
+            document.getElementById('nextButton').style.display = 'block';
+
+            setTimeout(() => {
+                nextMessageDiv.classList.add('fade-out');
+                setTimeout(() => {
+                    nextMessageDiv.remove();
+                }, 500);
+            }, 10000);
+        }
+
+        window.onload = function(){
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el =>{
+                setTimeout(() =>{
+                    el.classList.add('active');
+                }, 500);
+            });
+        }
+        
+    }
+    </script>
+</body>
+
+</html>
